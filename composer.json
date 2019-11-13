@@ -1,0 +1,36 @@
+{
+    "name": "nimfus/laravel-pdf-combiner",
+    "description": "",
+    "keywords": ["merger", "merge", "pdf", "manage", "laravel", "duplex merge", "concat", "combine"],
+    "license" : [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Viacheslav Skydanchuk",
+            "email": "nimfus@gmail.com",
+            "homepage": "https://github.com/Nimfus"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    },
+    "autoload": {
+        "psr-0": {
+            "Nimfus\\LaravelPdfMerge": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nimfus\\LaravelPdfMerge\\PdfCombinerServiceProvider"
+            ],
+            "aliases": {
+                "PdfMerge": "Nimfus\\LaravelPdfMerge\\Facades\\PdfCombiner"
+            }
+        }
+    }
+}
